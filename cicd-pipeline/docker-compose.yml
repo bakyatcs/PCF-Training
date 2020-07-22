@@ -1,0 +1,8 @@
+databases:
+ image: mysql:latest
+ environment:
+  MYSQL_ROOT_PASSWORD: password
+web:
+ image: bakya/spring-1.0
+ ports:
+   - "8083:8083"
